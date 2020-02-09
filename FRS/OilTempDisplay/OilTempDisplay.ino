@@ -16,7 +16,7 @@ CAN::CReadCANFrame F_READ_DATA ;
 // Modules to use
 FRS::COilDisplay S_OIL_DISPLAY(S_CAN, F_READ_DATA) ;
 
-Adafruit_SSD1306 display(128, 64, &Wire, 4);
+//Adafruit_SSD1306 display(128, 64, &Wire, 4);
 /*****************************************************************************/
 void setup()
 {
@@ -40,7 +40,7 @@ void setup()
 
 	// Ok, everything seems good
 	PRINTLN_STR("CAN initialization OK") ;
-
+/*
   while(!display.begin(SSD1306_SWITCHCAPVCC, 0x3C)) { // Address 0x3C for 128x64
     Serial.println(F("SSD1306 allocation failed"));
     // Wait some time before trying again
@@ -48,6 +48,7 @@ void setup()
   }
     // Ok, everything seems good
   PRINTLN_STR("OLED initialization OK") ;
+	*/
 }
 /*****************************************************************************/
 void loop()
